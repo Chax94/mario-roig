@@ -2354,7 +2354,7 @@ img.ri {
 
 .masonry__brick {
   float: left;
-  margin: 0 0 20px 0;
+  margin: 25px 10px;
   /* position: static !important; */
   width: auto;
 }
