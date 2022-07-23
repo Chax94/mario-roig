@@ -868,8 +868,8 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------- */
 .btn.full-width,
 button.full-width {
-  width: 100%;
-  margin-right: 0;
+  width: 70%;
+  margin-left: 20%;
 }
 
 .btn--medium,
@@ -1468,7 +1468,7 @@ input::-moz-focus-inner {
   letter-spacing: .5rem;
   margin-top: 0;
   padding-top: 3.2rem;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
   position: relative;
 }
 
@@ -1592,7 +1592,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .s-header {
   position: absolute;
-  top: 2rem;
+  top: 0;
   left: 0;
   width: 100%;
   height: 78px;
@@ -1617,7 +1617,7 @@ input::-moz-focus-inner {
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 40px;
 }
 
@@ -1632,7 +1632,7 @@ input::-moz-focus-inner {
 
 .header-logo img {
   width: 90px;
-  height: 36px;
+  height: 60px;
   margin: 0;
 }
 
@@ -1831,7 +1831,7 @@ input::-moz-focus-inner {
 
   .header-logo img {
     width: 128px;
-    height: 30px;
+    height: 50px;
   }
 
   .header-nav-wrap {
@@ -1968,7 +1968,7 @@ input::-moz-focus-inner {
 
 .intro-text h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 7rem;
+  font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.333;
   color: white;
@@ -1985,10 +1985,6 @@ input::-moz-focus-inner {
   margin-left: 1rem;
 }
 
-.s-intro .intro-signature {
-  position: fixed;
-  left: 30%;
-}
 
 .intro-scroll {
   font-family: "Roboto", sans-serif;
@@ -2064,6 +2060,7 @@ input::-moz-focus-inner {
 @media screen and (max-width:900px) {
   .intro-text h1 {
     font-size: 6rem;
+    padding-top: 40rem;
   }
 
   .intro-text br {
@@ -2188,14 +2185,19 @@ input::-moz-focus-inner {
   color: black;
   text-align: left;
   font-size: 17px;
-  margin-top: 1px;
-  max-width: 70%;
+
+  max-width: 100%;
   margin-left: 2rem;
   margin-right: auto;
 }
 
-.s-about h2 {
+.second-col{
+  margin-top: 120px;
+}
+
+.s-about .about-title {
   margin-top: 0;
+  padding-left: 60px;
 }
 
 img.ri {
@@ -2204,6 +2206,7 @@ img.ri {
 
 .s-about .row {
   max-width: 1140px;
+
 }
 
 .about-me__pic {
@@ -2226,10 +2229,10 @@ img.ri {
 }
 
 .about-me__text {
-  -webkit-columns: 2 360px;
-  -moz-columns: 2 360px;
-  columns: 2 360px;
-  column-gap: 50px;
+  -webkit-columns: 2 500px;
+  -moz-columns: 2 500px;
+  columns: 2 500px;
+  column-gap: 10px;
   float: right;
 }
 
@@ -2246,7 +2249,7 @@ img.ri {
 }
 
 .s-about .about-btn {
-  position: fixed;
+  position: absolute;
   top: 40%;
 }
 
@@ -2262,130 +2265,59 @@ img.ri {
     padding-bottom: 15.6rem;
   }
 
-  .about-experience__timeline .column:first-child {
-    padding-right: 30px;
-  }
-
-  .about-experience__timeline .column::last-child {
-    padding-left: 30px;
-  }
-
-  .timeline::after {
-    width: 4.4rem;
-  }
-
-  .timeline__icon-wrap {
-    left: 4.4rem;
-  }
-
-  .timeline__block {
-    padding-left: 4.4rem;
-  }
-
-  .timeline__header h5 {
-    font-size: 1.8rem;
-  }
-
+  
 }
 
 @media screen and (max-width:1024px) {
   .about-me__text {
-    column-gap: 40px;
-  }
-
-  .about-me__buttons .column:first-child {
-    padding-right: 20px;
-  }
-
-  .about-me__buttons .column:last-child {
-    padding-left: 20px;
-  }
-
-  .about-experience__timeline .column:first-child {
-    padding-right: 16px;
-  }
-
-  .about-experience__timeline .column:last-child {
-    padding-left: 16px;
+    column-gap: 10px;
   }
 
 }
 
 @media screen and (max-width:900px) {
-  .s-about .row {
-    max-width: 700px;
+  .s-about .lead {
+    width: 100%;
   }
 
-  .about-me__buttons .column:first-child {
-    padding-right: 16px;
-  }
-
-  .about-me__buttons .column:last-child {
-    padding-left: 16px;
-  }
-
-  .about-experience__timeline .column {
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .about-experience__timeline .column:first-child {
-    margin-bottom: 9.6rem;
-  }
-
-  .timeline::after {
-    width: 5.6rem;
-  }
-
-  .timeline__icon-wrap {
-    left: 5.6rem;
-  }
-
-  .timeline__block {
-    min-height: 0;
-    padding-left: 5.6rem;
+  .about-me__text {
+    float: right;
   }
 
 }
 
 @media screen and (max-width:800px) {
   .s-about {
-    padding-top: 16rem;
+    padding-top: 10rem;
   }
 
   .s-about .row {
-    max-width: 600px;
+    max-width: 100%;
   }
 
+  .second-col{
+    margin-top: 0px;
+  }
+
+  .about-me__pic {
+    height: auto;
+    width:100%;
+  }
+
+  .about-btn {
+    margin-top: 4.8rem;
+  }
+
+  .btn.full-width,
+  button.full-width {
+    width: 70%;
+    margin-left: 50px;
+  }
 }
 
 @media screen and (max-width:600px) {
-  .about-me__buttons .column:first-child,
-  .about-experience__timeline .column:first-child {
-    padding-right: 10px;
-  }
-
-  .about-me__buttons .column:last-child,
-  .about-experience__timeline .column:last-child {
-    padding-left: 10px;
-  }
-
-  .timeline::after {
-    width: 4.4rem;
-  }
-
-  .timeline__icon-wrap {
-    left: 4.4rem;
-  }
-
-  .timeline__block {
-    padding-left: 4.4rem;
-  }
-
-  .timeline__header h5 {
-    font-size: 1.8rem;
+  .second-col{
+    margin-top: 0px;
   }
 
 }
@@ -2393,28 +2325,6 @@ img.ri {
 @media screen and (max-width:400px) {
   .s-about > [class*="about-"] {
     margin-bottom: 14rem;
-  }
-
-  .about-me__buttons .column:first-child,
-  .about-experience__timeline .column:first-child {
-    padding-right: 0;
-  }
-
-  .about-me__buttons .column:last-child,
-  .about-experience__timeline .column:last-child {
-    padding-left: 0;
-  }
-
-  .timeline::after {
-    width: 2.8rem;
-  }
-
-  .timeline__icon-wrap {
-    left: 2.8rem;
-  }
-
-  .timeline__block {
-    padding-left: 2.8rem;
   }
 
 }
@@ -2447,7 +2357,6 @@ img.ri {
   margin: 0 0 20px 0;
   /* position: static !important; */
   width: auto;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .masonry__brick img {
@@ -2458,22 +2367,29 @@ img.ri {
   object-fit: cover;
 }
 
-
-/* sizes the dark box after hovering over the pic */
-.item-folio__thumb .thumb-link {
-  display: block;
-  position: relative;
+#myBtnContainer {
+  text-align: center;
 }
 
+
+/* sizes the dark box after hovering over the pic */
+
+/* .item-folio__thumb .thumb-link {
+  display: block;
+  position: relative;
+} */
+
 /* adds fade effect after hovering */
-.item-folio__thumb .thumb-link::before,
+
+/* .item-folio__thumb .thumb-link::before,
 .item-folio__thumb .thumb-link::after,
 .item-folio__thumb .thumb-link .item-folio__project-link {
   transition: all 0.5s ease-in-out;
-}
+} */
 
 /* adds dark box over the pictures after hovering over them */
-.item-folio__thumb .thumb-link::before {
+
+/* .item-folio__thumb .thumb-link::before {
   display: block;
   content: "";
   background-color: rgba(0, 0, 0, 0.7);
@@ -2484,10 +2400,11 @@ img.ri {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-}
+} */
 
 /* adds the cross after hovering over the image */
-.item-folio__thumb .thumb-link::after {
+
+/* .item-folio__thumb .thumb-link::after {
   display: block;
   content: "";
   width: 3.6rem;
@@ -2504,20 +2421,23 @@ img.ri {
   position: absolute;
   top: 50%;
   left: 50%;
-}
+} */
 
 /* adjusting the dark box in the bottom */
-.item-folio__thumb img {
+
+/* .item-folio__thumb img {
   vertical-align: bottom;
 }
+*/ 
 
 /* item-folio thumb on hover 
  * ----------------------------------------------- */
-.item-folio__thumb:hover a::before,
+
+/* .item-folio__thumb:hover a::before,
 .item-folio__thumb:hover a::after {
   opacity: 1;
   visibility: visible;
-}
+} */
 
 
 
@@ -2525,10 +2445,7 @@ img.ri {
  * GALLERY FILTER
  * TEST
  * ------------------------------------------------------------------- */
- .masonry-wrap .gallery-filter .filter-item.active{
-	color: #ff9800;
-	border-color : #ff9800;
-}
+
 
 .masonry-wrap .masonry__brick.show{
 	animation: fadeIn 0.5s ease;
@@ -2574,34 +2491,18 @@ img.ri {
 @media screen and (max-width:1200px) {
   .masonry__brick {
     margin: 25px 10px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 
   .item-folio {
     padding: 0;
   }
-
-  .item-folio__thumb .thumb-link::after {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .item-folio__thumb .item-folio__project-link {
-    width: 5.6rem;
-    height: 5.6rem;
-  }
-
-  .item-folio__title,
-  .item-folio__cat {
-    font-size: 1.5rem;
-  }
-
 }
 
 @media screen and (max-width:1024px) {
   .masonry__brick {
     margin: 25px 10px;
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
 
   .item-folio {
@@ -2613,7 +2514,7 @@ img.ri {
 @media screen and (max-width:900px) {
   .masonry__brick {
     padding: 0;
-    margin-bottom: 32px;
+    margin-bottom: 0;
     width: 100%;
   }
 
@@ -2625,7 +2526,7 @@ img.ri {
 
 @media screen and (max-width:800px) {
   .s-works {
-    padding-top: 16rem;
+    padding-top: 10rem;
   }
 
   .masonry-wrap {
@@ -2639,26 +2540,11 @@ img.ri {
 
   .masonry__brick {
     float: none;
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 
   .item-folio {
-    padding: 8.92% 8.92% 8.92%;
-  }
-
-  .item-folio__thumb .thumb-link::after {
-    width: 3.6rem;
-    height: 3.6rem;
-  }
-
-  .item-folio__thumb .item-folio__project-link {
-    width: 6.4rem;
-    height: 6.4rem;
-  }
-
-  .item-folio__title,
-  .item-folio__cat {
-    font-size: 1.7rem;
+    padding: 0% 12% 0%;
   }
 
 }
@@ -2675,20 +2561,6 @@ img.ri {
     margin-bottom: 44px;
   }
 
-  .item-folio__thumb .thumb-link::after {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .item-folio__thumb .item-folio__project-link {
-    width: 5.6rem;
-    height: 5.6rem;
-  }
-
-  .item-folio__title,
-  .item-folio__cat {
-    font-size: 1.5rem;
-  }
 
 }
 

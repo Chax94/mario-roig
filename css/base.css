@@ -603,7 +603,7 @@ textarea {
 	-webkit-flex: 0 0 50%;
 	-ms-flex: 0 0 50%;
 	flex: 0 0 50%;
-	max-width: 50%;
+	max-width: 100%;
 }
 
 .large-7 {
@@ -842,6 +842,13 @@ textarea {
 
 	.hide-on-tablet {
 		display: none;
+	}
+
+	.large-half {
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 
 }
